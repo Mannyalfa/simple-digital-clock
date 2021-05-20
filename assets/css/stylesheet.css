@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: consolas;
 }
 
 section{
@@ -22,6 +23,39 @@ section{
     z-index: 1000;
     border-radius: 20px;
     border: 1px solid rgba(0,0,0,0.1);
-    background-image: blur(20px);
+    background-filter: blur(20px);
 }
+
+.clock .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.clock .container h2{
+    font-size: 6em;
+    color: #fff;
+}
+
+.clock .container h2:nth-child(odd){
+    padding: 5px 15px;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    margin: 0 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+#ampm{
+    position: relative;
+    top: -50px;
+    font-size: 2em;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
 
