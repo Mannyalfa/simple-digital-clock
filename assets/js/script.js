@@ -20,3 +20,4 @@ function clock(){
     ampm.innerHTML = am;
 }
 var interval = setInterval(clock,1000)
+// create an alarm function
